@@ -1,0 +1,63 @@
+// font-family: 'Lato', sans-serif;
+// font-family: 'Merriweather', serif;
+// font-family: 'Merriweather Sans', sans-serif; 
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas: "header header header"
+                            "main main main"
+                            "post_1 post_2 post_2"
+                            "post_3 post_4 post_5"
+                            "post_6 post_7 post_7"
+                            "btn btn btn"
+                            "footer footer footer"
+}
+
+header {
+    grid-area: header;
+    background-color: red;
+}
+.main {
+    grid-area: main;
+    background-color: blue;
+}
+.post_1 {
+    grid-area: post_1;
+    background-color: green;
+}
+.post_2 {
+    grid-area: post_2;
+    background-color: rgb(0, 10, 0);
+}
+.post_3 {
+    grid-area: post_3;
+    background-color: rgb(224, 193, 13);
+}
+.post_4 {
+    grid-area: post_4;
+    background-color: rgb(207, 98, 47);
+}
+.post_5 {
+    grid-area: post_5;
+    background-color: rgb(28, 109, 202);
+}
+.post_6 {
+    grid-area: post_6;
+    background-color: rgb(158, 65, 127);
+}
+.post_7 {
+    grid-area: post_7;
+    background-color: rgb(223, 47, 23);
+}
+.btn {
+    grid-area: btn;
+    background-color: rgb(59, 51, 51);
+}
+.footer {
+    grid-area: footer;
+    background-color: rgb(141, 196, 168);
+}
+

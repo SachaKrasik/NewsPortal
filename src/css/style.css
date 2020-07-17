@@ -1,0 +1,63 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  grid-template-areas: "header header header" "main main main" "post_1 post_2 post_2" "post_3 post_4 post_5" "post_6 post_7 post_7" "btn btn btn" "footer footer footer";
+}
+
+header {
+  grid-area: header;
+  background-color: red;
+}
+
+.main {
+  grid-area: main;
+  background-color: blue;
+}
+
+.post_1 {
+  grid-area: post_1;
+  background-color: green;
+}
+
+.post_2 {
+  grid-area: post_2;
+  background-color: #000a00;
+}
+
+.post_3 {
+  grid-area: post_3;
+  background-color: #e0c10d;
+}
+
+.post_4 {
+  grid-area: post_4;
+  background-color: #cf622f;
+}
+
+.post_5 {
+  grid-area: post_5;
+  background-color: #1c6dca;
+}
+
+.post_6 {
+  grid-area: post_6;
+  background-color: #9e417f;
+}
+
+.post_7 {
+  grid-area: post_7;
+  background-color: #df2f17;
+}
+
+.btn {
+  grid-area: btn;
+  background-color: #3b3333;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #8dc4a8;
+}
+/*# sourceMappingURL=style.css.map */
