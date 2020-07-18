@@ -1,13 +1,20 @@
 // font-family: 'Lato', sans-serif;
 // font-family: 'Merriweather', serif;
 // font-family: 'Merriweather Sans', sans-serif; 
+*, *:before, *:after {
+    box-sizing: border-box;
+}
 
 body {
+    font-family: 'Merriweather', serif;
+    background-color: #2e2e30;
+    padding: 33px 0 45px 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
-    grid-template-areas: "header header header"
+    grid-template-rows: 67px 615px 416px 416px 416px 67px 67px;
+    grid-column-gap: 30px; 
+    grid-row-gap: 35px;
+    grid-template-areas:    "header header header"
                             "main main main"
                             "post_1 post_2 post_2"
                             "post_3 post_4 post_5"
@@ -18,40 +25,92 @@ body {
 
 header {
     grid-area: header;
-    background-color: red;
+    height: 67px;
+    background-color: #2e2e30;
+    .logo_link {
+        color: #ffffff;
+        font-size: 22px;
+        font-weight: 400;
+        letter-spacing: -0.44px;
+        text-decoration: none;
+    }
+    .navbar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 498px;
+        height: 67px;
+        padding: 28px 40px;
+        background-color: #38383a;
+        &_list {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-content: center;
+            list-style-type: none;
+        }
+        &_link {
+            text-decoration: none;
+            color: #888888;
+            font-family: 'Merriweather Sans', sans-serif; 
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 13px;
+            text-transform: uppercase;
+            letter-spacing: 3.64px;
+            transition: all ease-in .4s;
+            &:hover {
+                color:#4b77be;
+            }
+            &:active {
+                color:red;
+            }
+        }
+        .active_page {
+            color: #ffffff;
+            font-weight: 700;
+            &:hover {
+                color:#4b77be;
+            }
+            &:active {
+                color:red;
+            }
+        }
+    }
 }
 .main {
-    grid-area: main;
-    background-color: blue;
+    grid-area: main;       
+    background-color: blue;       
 }
+
 .post_1 {
     grid-area: post_1;
-    background-color: green;
 }
+
 .post_2 {
     grid-area: post_2;
-    background-color: rgb(0, 10, 0);
 }
+
 .post_3 {
     grid-area: post_3;
-    background-color: rgb(224, 193, 13);
 }
+
 .post_4 {
     grid-area: post_4;
-    background-color: rgb(207, 98, 47);
 }
+
 .post_5 {
     grid-area: post_5;
-    background-color: rgb(28, 109, 202);
 }
+
 .post_6 {
     grid-area: post_6;
-    background-color: rgb(158, 65, 127);
 }
+
 .post_7 {
     grid-area: post_7;
-    background-color: rgb(223, 47, 23);
 }
+
 .btn {
     grid-area: btn;
     background-color: rgb(59, 51, 51);
@@ -60,4 +119,17 @@ header {
     grid-area: footer;
     background-color: rgb(141, 196, 168);
 }
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
