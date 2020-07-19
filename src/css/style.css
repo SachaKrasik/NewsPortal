@@ -86,30 +86,37 @@ header .navbar .active_page:active {
 
 .post_1 {
   grid-area: post_1;
+  background-color: goldenrod;
 }
 
 .post_2 {
   grid-area: post_2;
+  background-color: purple;
 }
 
 .post_3 {
   grid-area: post_3;
+  background-color: seagreen;
 }
 
 .post_4 {
   grid-area: post_4;
+  background-color: brown;
 }
 
 .post_5 {
   grid-area: post_5;
+  background-color: cyan;
 }
 
 .post_6 {
   grid-area: post_6;
+  background-color: darkorange;
 }
 
 .post_7 {
   grid-area: post_7;
+  background-color: deeppink;
 }
 
 .btn {
