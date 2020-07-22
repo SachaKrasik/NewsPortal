@@ -4,27 +4,27 @@
     grid-gap: 35px 31px;
 }
 
-.post:nth-child(n) {
+.news_item:nth-child(n) {
     height: 416px;
     grid-column: 1 / 2;
 }
 
-.post:nth-child(7n + 4) {
+.news_item:nth-child(7n + 4) {
     height: 416px;
     grid-column: 2 / 3;
 }
 
-.post:nth-child(7n + 7 ) {
+.news_item:nth-child(7n + 7 ) {
     height: 416px;
     grid-column: 2 / 4;
 }
 
-.post:nth-child(7n + 2) {
+.news_item:nth-child(7n + 2) {
     height: 416px;
     grid-column: 2 / 4;
 }
 
-.post:nth-child(7n + 5 ) {
+.news_item:nth-child(7n + 5 ) {
     height: 416px;
     grid-column: 3 / 4;
 }
