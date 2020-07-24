@@ -54,6 +54,12 @@
             line-height: 36px;
             border-radius: 20px;
             cursor: pointer;
+            transition: all linear .3s;
+            &:hover {
+                color: #ffffff;
+                background-color: #38383a;
+                border:none;
+            }
         }
     }
     &_list {

@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather+Sans:wght@400;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather+Sans:wght@400;700&family=Merriweather:wght@400;700&display=swap"
+        rel="stylesheet">
     <title>News portal</title>
 </head>
+
 <body>
     <header>
-      <div class="container d-flex">
-        <div class="logo">
-            <a class="logo_link" href="#">Media</a>
+        <div class="container d-flex">
+            <div class="logo">
+                <a class="logo_link" href="#">Media</a>
+            </div>
+            <nav class="navbar">
+                <ul class="navbar_list">
+                    <li><a class="navbar_link active_page" href="#">HOME</a></li>
+                    <li><a class="navbar_link" href="#">ABOUT</a></li>
+                    <li><a class="navbar_link" href="#">CONTACT</a></li>
+                    <li><a class="navbar_link" href="#">PAGE</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="navbar">
-            <ul class="navbar_list">
-                <li><a class="navbar_link active_page" href="#">HOME</a></li>
-                <li><a class="navbar_link" href="#">ABOUT</a></li>
-                <li><a class="navbar_link" href="#">CONTACT</a></li>
-                <li><a class="navbar_link" href="#">PAGE</a></li>
-            </ul>
-        </nav>
-      </div>
     </header>
     <div class="main container">
         <div class="main_promo">
-            <div class="main_promo_theme">
+            <div class="main_promo_theme bg-lifestyle">
                 LIFESTYLE
             </div>
             <div class="main_promo_title">
                 Things To Do Before You're 30
             </div>
             <div class="main_promo_desc">
-                For many it means that you’re no longer in the hard-partying, bad decision-making stage of your life, for better or for worse.
+                For many it means that you’re no longer in the hard-partying, bad decision-making stage of your life,
+                for better or for worse.
             </div>
             <a href="#" class="main_promo_link">READ MORE</a>
         </div>
@@ -43,7 +48,7 @@
                     LIFESTYLE
                 </div>
                 <div class="main_list_item-title">
-                    Things To Do <br> Before You're 30                       
+                    Things To Do <br> Before You're 30
                 </div>
             </div>
             <div class="main_list_item">
@@ -52,7 +57,7 @@
                 </div>
                 <div class="main_list_item-title">
                     Value-Based <br>
-                    Care‘s Data Problem                      
+                    Care‘s Data Problem
                 </div>
             </div>
             <div class="main_list_item">
@@ -60,8 +65,8 @@
                     TECHNOLOGY
                 </div>
                 <div class="main_list_item-title">
-                    How to Design for <br> 
-                    Virtual Reality                      
+                    How to Design for <br>
+                    Virtual Reality
                 </div>
             </div>
             <div class="main_list_item">
@@ -69,162 +74,203 @@
                     EDUCATION
                 </div>
                 <div class="main_list_item-title">
-                    What I Will Fret Over                     
+                    What I Will Fret Over
                 </div>
             </div>
-      </div>
+        </div>
     </div>
     <div class="news container">
-            <div class="news_item">
-                <img src="./img/post_1.jpg" alt="" class="news_item-img">
-                <div class="news_item-theme">
-                    COUNTRY
-                </div>
-                <div class="news_item-title">
-                    12 photos Indonesian beauty 
-                    in your eyes
-                </div>
-                <div class="news_item-desc">
-                    This is the reaction of many people is often asked when visiting a variety...
-                </div>
-                <a href="#" class="news_item-btn">Read More</a>
+
+        <div class="news_item">
+            <img src="./img/post_1.jpg" alt="" class="news_item-img">
+            <div class="news_item-theme">
+                <span class="news_item-theme-text bg-country">COUNTRY</span>
+            </div>
+            <div class="news_item-title">
+                12 photos Indonesian beauty
+                in your eyes
+            </div>
+            <div class="news_item-desc">
+                This is the reaction of many people is often asked when visiting a variety...
+            </div>
+            <div class="news_item-line"></div>
+            <div class="news_item-group-link">
+                <a href="#" class="news_item-btn ">Read More</a>
                 <a href="#" class="news_item-comment">
-                    <span class="news_item-comment-icon">Icon</span>
+                    <img class="news_item-comment-icon" src="./img/comment_icon.svg" alt="comment">
                     <span class="news_item-comment-number">12</span>
                 </a>
+                <button class="news_item-like hover-btn">
+                    <img src="./img/like_icon.svg" alt="like">
+                </button>
             </div>
-            <div class="news_item">
-                <img src="./img/post_2.png" alt="" class="news_item-img">
-                <div class="news_item-theme">
-                    PEOPLE
-                </div>
-                <div class="news_item-title">
-                    Ridwan Kamil role in Success 
-                    Story Organizing Surabaya 
-                </div>
-                <div class="news_item-desc">
-                    Bandung many people skeptical and apathetic towards revamping the city of Bandung with all tangled Problems. Though if you want a little to learn from the neighboring town...
-                </div>
+        </div>
+        <div class="news_item">
+            <img src="./img/post_2.png" alt="" class="news_item-img img-big">
+            <div class="news_item-theme">
+                <span class="news_item-theme-text bg-people">PEOPLE</span>
+            </div>
+            <div class="news_item-title big-title">
+                Ridwan Kamil role in Success
+                Story Organizing Surabaya
+            </div>
+            <div class="news_item-desc big-desc">
+                Bandung many people skeptical and apathetic towards revamping the city of Bandung with all tangled
+                Problems. Though if you want a little to learn from the neighboring town...
+            </div>
+            <div class="news_item-line line-hidden"></div>
+            <div class="news_item-group-link big-group-link">
                 <a href="#" class="news_item-btn">Read More</a>
                 <a href="#" class="news_item-comment">
-                    <span class="news_item-comment-icon">Icon</span>
-                    <span class="news_item-comment-number">34</span>
+                    <img class="news_item-comment-icon" src="./img/comment_icon.svg" alt="comment">
+                    <span class="news_item-comment-number">12</span>
+                </a>
+                <a href="#">
+                    <img class="news_item-like" src="./img/like_icon.svg" alt="like">
                 </a>
             </div>
-            <div class="news_item">
-                <img src="./img/post_3.jpg" alt="" class="news_item-img">
+        </div>
+        <div class="news_item">
+            <img src="./img/post_3.jpg" alt="" class="news_item-img">
+            <div class="news_item-theme">
+                <span class="news_item-theme-text bg-travel">TRAVEL</span>
+            </div>
+            <div class="news_item-title">
+                This 10 Country Beautiful
+                Non-Asean Free Visa
+            </div>
+            <div class="news_item-desc">
+                When they wanted to travel but are reluctant to arrange a visa is a...
+            </div>
+            <div class="news_item-line"></div>
+            <div class="news_item-group-link">
+                <a href="#" class="news_item-btn">Read More</a>
+                <a href="#" class="news_item-comment">
+                    <img class="news_item-comment-icon" src="./img/comment_icon.svg" alt="comment">
+                    <span class="news_item-comment-number">12</span>
+                </a>
+                <a href="#">
+                    <img class="news_item-like" src="./img/like_icon.svg" alt="like">
+                </a>
+            </div>
+        </div>
+        <div class="news_item">
+            <img src="./img/post_4.jpg" alt="" class="news_item-img">
+            <div class="news_item-theme">
+                <span class="news_item-theme-text bg-technology">TECHNOLOGY</span>
+            </div>
+            <div class="news_item-title">
+                Important Tips on Buying a
+                New Mobile-Based Android
+            </div>
+            <div class="news_item-desc">
+                Newly purchased device did many advantages, especially those...
+            </div>
+            <div class="news_item-line"></div>
+            <div class="news_item-group-link">
+                <a href="#" class="news_item-btn">Read More</a>
+                <a href="#" class="news_item-comment">
+                    <img class="news_item-comment-icon" src="./img/comment_icon.svg" alt="comment">
+                    <span class="news_item-comment-number">12</span>
+                </a>
+                <a href="#">
+                    <img class="news_item-like" src="./img/like_icon.svg" alt="like">
+                </a>
+            </div>
+        </div>
+        <div class="news_item">
+            <img src="./img/post_4.jpg" alt="" class="news_item-img img-hidden">
+            <div class="news_item-theme margin-top_theme">
+                <span class="news_item-theme-text bg-economy">ECONOMY</span> 
+            </div>
+            <div class="news_item-title margin-top_title title-no-img">
+                Four Pillars Decide<br>
+                Fate of Economy <br>
+                Indonesia
+            </div>
+            <div class="news_item-desc margin-top_desc desc-no-img">
+                The domestic economy is still faced with a number of structural challenges. To achieve sustain...
+            </div>
+            <div class="news_item-line margin-top_line"></div>
+            <div class="news_item-group-link">
+                <a href="#" class="news_item-btn">Read More</a>
+                <a href="#" class="news_item-comment">
+                    <img class="news_item-comment-icon" src="./img/comment_icon.svg" alt="comment">
+                    <span class="news_item-comment-number">12</span>
+                </a>
+                <a href="#">
+                    <img class="news_item-like" src="./img/like_icon.svg" alt="like">
+                </a>
+            </div>
+        </div>
+        <div class="news_item">
+            <img src="./img/post_5.jpg" alt="" class="news_item-img">
+            <div class="news_item-theme">
+                <span class="news_item-theme-text bg-home">HOME & DECOR</span> 
+            </div>
+            <div class="news_item-title">
+                10 Caring for plants in the 
+                courtyard house
+            </div>
+            <div class="news_item-dots">
+                <span class="news_item-dots-item"></span>
+                <span class="news_item-dots-item"></span>
+                <span class="news_item-dots-item"></span>
+                <span class="news_item-dots-item"></span>
+            </div>
+            <div class="news_item-line"></div>
+            <div class="news_item-group-link">
+                <a href="#" class="news_item-btn">Read More</a>
+                <a href="#" class="news_item-comment">
+                    <img class="news_item-comment-icon" src="./img/comment_icon.svg" alt="comment">
+                    <span class="news_item-comment-number">12</span>
+                </a>
+                <a href="#">
+                    <img class="news_item-like" src="./img/like_icon.svg" alt="like">
+                </a>
+            </div>
+        </div>
+        <div class="news_item">
+            <div class="news_item-group">
+                NEWEST POST
+            </div>
+            <div class="news_item-group-unit">
+                <img src="./img/post_7.jpg" alt="" class="news_item-img">
                 <div class="news_item-theme">
                     TRAVEL
                 </div>
                 <div class="news_item-title">
-                    This 10 Country Beautiful 
-                    Non-Asean Free Visa
+                    Similar exist Painting Mysterious Alien in
+                    America
                 </div>
                 <div class="news_item-desc">
-                    When they wanted to travel but are reluctant to arrange a visa is a...
+                    Name Sego Canyon in the US has not been as popular as the Grand Canyon.
                 </div>
-                <a href="#" class="news_item-btn">Read More</a>
-                <a href="#" class="news_item-comment">
-                    <span class="news_item-comment-icon">Icon</span>
-                    <span class="news_item-comment-number">30</span>
-                </a>
             </div>
-            <div class="news_item">
-                <img src="./img/post_4.jpg" alt="" class="news_item-img">
+            <div class="news_item-group-unit">
                 <div class="news_item-theme">
-                    TECHNOLOGY
+                    LIFESTYLE
                 </div>
                 <div class="news_item-title">
-                    Important Tips on Buying a 
-                    New Mobile-Based Android
+                    This Secret Branded Goods Shopping Deals New York
                 </div>
-                <div class="news_item-desc">
-                    Newly purchased device did many advantages, especially those...
-                </div>
-                <a href="#" class="news_item-btn">Read More</a>
-                <a href="#" class="news_item-comment">
-                    <span class="news_item-comment-icon">Icon</span>
-                    <span class="news_item-comment-number">12</span>
-                </a>
+                <span class="news_item-title-arrow">></span>
             </div>
-            <div class="news_item">
+            <div class="news_item-group-unit">
                 <div class="news_item-theme">
-                    ECONOMY
+                    TRAVEL
                 </div>
                 <div class="news_item-title">
-                    Four Pillars Decide 
-                    Fate of Economy
-                    Indonesia
+                    The Three Colors Beach in Malang!
                 </div>
-                <div class="news_item-desc">
-                    The domestic economy is still faced with a number of structural challenges. To achieve sustain...
-                </div>
-                <a href="#" class="news_item-btn">Read More</a>
-                <a href="#" class="news_item-comment">
-                    <span class="news_item-comment-icon">Icon</span>
-                    <span class="news_item-comment-number">2</span>
-                </a>
+                <span class="news_item-title-arrow">></span>
             </div>
-            <div class="news_item">
-                <img src="./img/post_5.jpg" alt="" class="news_item-img">
-                <div class="news_item-theme">
-                    TECHNOLOGY
-                </div>
-                <div class="news_item-title">
-                    Important Tips on Buying a 
-                    New Mobile-Based Android
-                </div>
-                <div class="news_item-dots">
-                    <span class="news_item-dots-item"></span>
-                    <span class="news_item-dots-item"></span>
-                    <span class="news_item-dots-item"></span>
-                    <span class="news_item-dots-item"></span>
-                </div>
-                <a href="#" class="news_item-btn">Read More</a>
-                <a href="#" class="news_item-comment">
-                    <span class="news_item-comment-icon">Icon</span>
-                    <span class="news_item-comment-number">8</span>
-                </a>
-            </div>
-            <div class="news_item">
-                <div class="news_item-group">
-                    NEWEST POST
-                </div>
-                <div class="news_item-group-unit">
-                    <img src="./img/post_7.jpg" alt="" class="news_item-img">
-                    <div class="news_item-theme">
-                        TRAVEL
-                    </div>
-                    <div class="news_item-title">
-                        Similar exist Painting Mysterious Alien in 
-                        America
-                    </div>
-                    <div class="news_item-desc">
-                        Name Sego Canyon in the US has not been as popular as the Grand Canyon. 
-                    </div>
-                </div>
-                <div class="news_item-group-unit">
-                    <div class="news_item-theme">
-                        LIFESTYLE
-                    </div>
-                    <div class="news_item-title">
-                        This Secret Branded Goods Shopping Deals New York
-                    </div>
-                    <span class="news_item-title-arrow">></span>
-                </div>
-                <div class="news_item-group-unit">
-                    <div class="news_item-theme">
-                        TRAVEL
-                    </div>
-                    <div class="news_item-title">
-                        The Three Colors Beach in Malang!
-                    </div>
-                    <span class="news_item-title-arrow">></span>
-                </div>
-            </div>
+        </div>
+
     </div>
-    
+
     <!-- <div class="btn">btn</div>
     <div class="footer">footer</div> -->
 </body>
+
 </html>
