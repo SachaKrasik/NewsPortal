@@ -26,7 +26,7 @@ body {
 
 .footer {
   grid-area: footer;
-  background-color: #8dc4a8;
+  background-color: #2e2e30;
 }
 
 header {
@@ -614,6 +614,7 @@ header .navbar .active_page:active {
   line-height: 67px;
   cursor: pointer;
   transition: all linear .3s;
+  border-radius: 6px;
 }
 
 .load-btn:hover {
@@ -631,5 +632,33 @@ header .navbar .active_page:active {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 3.92px;
+}
+
+.footer {
+  height: 18px;
+  margin-top: 54px;
+  margin-bottom: 46px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-copyright {
+  height: 18px;
+  color: #ffffff;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.social-icons {
+  width: 158px;
+  height: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon_footer {
+  width: 20px;
+  height: 16px;
 }
 /*# sourceMappingURL=style.css.map */
