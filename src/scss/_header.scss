@@ -18,12 +18,14 @@ header {
         height: 67px;
         padding: 28px 40px;
         background-color: #38383a;
+        border-radius: 6px;
         &_list {
             width: 100%;
             display: flex;
             justify-content: space-around;
             align-content: center;
             list-style-type: none;
+            padding: 0;
         }
         &_link {
             text-decoration: none;

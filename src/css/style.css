@@ -52,6 +52,7 @@ header .navbar {
   height: 67px;
   padding: 28px 40px;
   background-color: #38383a;
+  border-radius: 6px;
 }
 
 header .navbar_list {
@@ -60,6 +61,7 @@ header .navbar_list {
   justify-content: space-around;
   align-content: center;
   list-style-type: none;
+  padding: 0;
 }
 
 header .navbar_link {
@@ -96,13 +98,25 @@ header .navbar .active_page:active {
 }
 
 .main {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: relative;
   margin-top: 35px;
-  height: 615px;
-  background: url("../img/bg_main.jpg") center center/cover no-repeat;
+  min-height: 615px;
+}
+
+.main-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  border-radius: 6px;
 }
 
 .main_promo {
-  padding-top: 205px;
+  width: 55%;
   padding-left: 46px;
 }
 
@@ -131,13 +145,11 @@ header .navbar .active_page:active {
 }
 
 .main_promo_desc {
-  max-width: 529px;
   margin-top: 22px;
   color: #ffffff;
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
-  text-align: left;
 }
 
 .main_promo_link {
@@ -164,25 +176,31 @@ header .navbar .active_page:active {
 .main_promo_link:hover {
   color: #ffffff;
   background-color: #38383a;
-  border: none;
+  border-color: transparent;
 }
 
 .main_list {
+  position: absolute;
+  left: 0;
+  bottom: 0;
   display: flex;
   justify-content: space-between;
-  margin-top: 52px;
   width: 100%;
-  height: 134px;
   background-color: #ffffff;
 }
 
 .main_list_item {
   width: 25%;
+  height: 134px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 30px 0 30px 50px;
+  align-items: flex-start;
+  padding-left: 48px;
+  padding-top: 30px;
   color: #38383a;
+  transition: all linear .3s;
+  cursor: pointer;
 }
 
 .main_list_item-theme {
@@ -195,7 +213,8 @@ header .navbar .active_page:active {
 }
 
 .main_list_item-title {
-  margin-top: 10px;
+  padding-top: 10px;
+  width: 80%;
   color: #38383a;
   font-size: 16px;
   font-weight: 700;
@@ -203,12 +222,26 @@ header .navbar .active_page:active {
   letter-spacing: -0.32px;
 }
 
+.main_list_item:hover {
+  background-color: #6198f0;
+}
+
+.main_list_item:hover > div {
+  color: #ffffff;
+}
+
 .main_list_item-active {
-  background-color: #4b77be;
+  background-color: #4b77be !important;
 }
 
 .main_list_item-active > div {
   color: #ffffff;
+}
+
+.overflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .news {
