@@ -18,9 +18,16 @@
     display: flex;
     justify-content: space-between;
     cursor: pointer;
+    padding-left: 20px;
 }
 .icon_footer {
     width: 20px;
     height: 16px;
+}
+
+@media (max-width: 576px) {
+    .footer-copyright {
+        font-size: 12px;
+    }
 }
 
