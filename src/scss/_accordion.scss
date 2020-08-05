@@ -24,7 +24,7 @@
         align-items: center;
     }
     &-theme {
-        width: 140px;
+        width: 180px;
         color: #2e2e30;
         font-family: 'Merriweather Sans', sans-serif; 
         font-size: 12px;
@@ -44,22 +44,6 @@
     }
 
 }
-// .accordion-item {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     width: 713px;
-//     height: 77px;
-//     box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
-//     background-color: #ffffff;
-//     &:hover {
-//         background-color: #f2f1f1;
-//     }
-//     &-desc {
-//         display: flex;
-//     }
-// }
-
 .accordion-item-open {
     padding-right: 20px;
     padding-left: 20px;

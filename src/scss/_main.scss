@@ -13,6 +13,7 @@
        height: 100%;
        border-radius: 6px;
        background-color:#2e2e30;
+       object-fit: cover;
    }
     &_promo {
         width: 55%;
@@ -181,6 +182,23 @@
                     overflow: hidden;
                     text-overflow: ellipsis;
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .main {
+        &_title {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        &_promo {
+            &_link {
+                margin-top: 20px;
+            }
+            &_desc {
+                margin-top: 10px;
             }
         }
     }
