@@ -14,11 +14,12 @@
        border-radius: 6px;
        background-color:#2e2e30;
        object-fit: cover;
+       z-index: -1;
    }
     &_promo {
         width: 55%;
         z-index: 1;
-       padding-left: 46px;
+        padding-left: 46px;
         &_theme {
             width: 103px;
             height: 24px;
@@ -83,6 +84,7 @@
         width: 100%;
         background-color: #ffffff;
         border-radius:0 0 6px 6px;
+        z-index: 1;
         &_item {
             width: 25%;
             display: flex;
@@ -153,6 +155,13 @@
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
 }
+.text-overflow-5 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
 
 @media (max-width: 767px) {
     .main {
@@ -187,6 +196,29 @@
     }
 }
 
+.main_promo .main_promo_item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1s;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
 @media (max-width: 576px) {
     .main {
         &_title {
@@ -195,7 +227,7 @@
         }
         &_promo {
             &_link {
-                margin-top: 20px;
+                margin-top: 10px;
             }
             &_desc {
                 margin-top: 10px;

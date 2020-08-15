@@ -30,11 +30,7 @@ body {
     grid-area: footer;
     background-color: #2e2e30;
 }
-// @media (min-width: 1200px) {
-//     .container {
-//         max-width: 1200px;
-//     }
-// }
+
 @import 'header';
 @import 'main';
 @import 'news';
